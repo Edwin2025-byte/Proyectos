@@ -1,0 +1,7 @@
+Django>=5.0
+psycopg2-binary
+python-dotenv
+gunicorn
+djangorestframework
+drf_spectacular
+django-cors-headers
