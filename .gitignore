@@ -1,0 +1,19 @@
+# Carpeta de dependencias de React Native (MUY PESADA)
+node_modules/
+
+# Datos de la base de datos (No se suben, cada uno tiene su DB local)
+postgres_data/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Archivos de configuración de Expo
+.expo/
+dist/
+
+# Archivos de entorno (contraseñas y keys)
+.env
+
+# Base de datos local de pruebas si usaste SQLite
+db.sqlite3
