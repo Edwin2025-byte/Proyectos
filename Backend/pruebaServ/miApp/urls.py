@@ -6,6 +6,7 @@ from .views import (
     EstudianteViewSet, CursoViewSet, InscripcionViewSet,
     TemaViewSet, TareaViewSet, EntregaViewSet,
     LogroViewSet, EstudianteLogroViewSet, PagoViewSet,
+    RankingViewSet, # <--- AGREGADO AQUÍ
 )
 
 router = DefaultRouter()
@@ -22,6 +23,7 @@ router.register(r'entregas', EntregaViewSet)
 router.register(r'logros', LogroViewSet)
 router.register(r'estudiante-logros', EstudianteLogroViewSet)
 router.register(r'pagos', PagoViewSet)
+router.register(r'ranking', RankingViewSet, basename='ranking') # <--- AGREGADO AQUÍ
 
 urlpatterns = [
     path('', include(router.urls)),

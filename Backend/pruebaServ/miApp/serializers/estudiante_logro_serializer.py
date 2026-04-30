@@ -2,7 +2,7 @@ from rest_framework import serializers
 from ..models import EstudianteLogro
 
 class EstudianteLogroSerializer(serializers.ModelSerializer):
-    # Estos campos extraen la información real de la tabla Logro
+    # Traemos la info de la tabla 'logros' para que la App tenga qué mostrar
     titulo = serializers.ReadOnlyField(source='logro.titulo')
     descripcion = serializers.ReadOnlyField(source='logro.descripcion')
     color = serializers.ReadOnlyField(source='logro.color')

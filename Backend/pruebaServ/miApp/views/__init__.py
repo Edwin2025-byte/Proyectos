@@ -11,3 +11,4 @@ from .entrega_view import EntregaViewSet
 from .logro_view import LogroViewSet
 from .estudiante_logro_view import EstudianteLogroViewSet
 from .pago_view import PagoViewSet
+from .ranking_view import RankingViewSet

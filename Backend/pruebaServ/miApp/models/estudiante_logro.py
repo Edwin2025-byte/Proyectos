@@ -2,8 +2,8 @@ from django.db import models
 from .estudiante import Estudiante
 from .logro import Logro
 
-
 class EstudianteLogro(models.Model):
+    # 'estudiante_id' y 'logro_id' son los nombres en tus tablas de pgAdmin
     estudiante = models.ForeignKey(
         Estudiante, 
         on_delete=models.CASCADE, 
@@ -24,4 +24,4 @@ class EstudianteLogro(models.Model):
         unique_together = (('estudiante', 'logro'),)
 
     def __str__(self):
-        return f"🏆 {self.estudiante.usuario.nombre_completo} desbloqueó: {self.logro.titulo}"
+        return f"Logro {self.logro.titulo} para {self.estudiante.usuario.nombre_completo}"
