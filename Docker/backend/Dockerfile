@@ -23,7 +23,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiamos el resto del código del proyecto
-COPY . .
+COPY . /app
 
 # Exponemos el puerto por defecto de Django
 EXPOSE 8000

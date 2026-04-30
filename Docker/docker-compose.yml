@@ -39,7 +39,7 @@ services:
       - "8000:8000"
     volumes:
       # Sincroniza tu código para que los cambios en VS Code se vean en el contenedor
-      - ./backend:/app
+      - .:/app
 
   frontend:
     # Ajustado al nombre de tu carpeta 'fronend' (sin la t)
